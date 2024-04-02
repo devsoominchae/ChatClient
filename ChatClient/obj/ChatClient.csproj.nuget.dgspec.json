@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DEV\\ChatClient\\ChatClient\\ChatClient.csproj": {}
+    "C:\\DEV\\CSharp\\ChatClient\\ChatClient\\ChatClient.csproj": {}
   },
   "projects": {
-    "C:\\DEV\\ChatClient\\ChatClient\\ChatClient.csproj": {
+    "C:\\DEV\\CSharp\\ChatClient\\ChatClient\\ChatClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DEV\\ChatClient\\ChatClient\\ChatClient.csproj",
+        "projectUniqueName": "C:\\DEV\\CSharp\\ChatClient\\ChatClient\\ChatClient.csproj",
         "projectName": "ChatClient",
-        "projectPath": "C:\\DEV\\ChatClient\\ChatClient\\ChatClient.csproj",
-        "packagesPath": "C:\\Users\\pinnaclesoft\\.nuget\\packages\\",
-        "outputPath": "C:\\DEV\\ChatClient\\ChatClient\\obj\\",
+        "projectPath": "C:\\DEV\\CSharp\\ChatClient\\ChatClient\\ChatClient.csproj",
+        "packagesPath": "C:\\Users\\cothc\\.nuget\\packages\\",
+        "outputPath": "C:\\DEV\\CSharp\\ChatClient\\ChatClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\pinnaclesoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cothc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,7 +74,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

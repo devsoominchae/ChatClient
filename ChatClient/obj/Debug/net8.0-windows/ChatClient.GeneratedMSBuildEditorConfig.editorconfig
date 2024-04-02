@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChatClient
-build_property.ProjectDir = C:\DEV\ChatClient\ChatClient\
+build_property.ProjectDir = C:\DEV\CSharp\ChatClient\ChatClient\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

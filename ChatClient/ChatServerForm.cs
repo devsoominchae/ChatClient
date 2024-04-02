@@ -12,18 +12,19 @@ using System.Net.Http;
 using static ChatClient.ChatClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+public class Message(int sender, int recipient, string content)
+{
+    public int SenderID { get; set; } = sender;
+    public int ReceiverID { get; set; } = recipient;
+    public string Content { get; set; } = content;
+}
+
 namespace ChatClient
 {
 
 
     public partial class ChatClient : Form
     {
-        public class Message
-        {
-            public int sender_json { get; set; }
-            public int recipient_json { get; set; }
-            public string message_json { get; set; }
-        }
 
         TcpClient client_socket = new();
         int client_port;
@@ -52,12 +53,7 @@ namespace ChatClient
 
         public string CreateJsonMessage(int sender, int recipient, string message_text)
         {
-            Message message = new Message
-            {
-                sender_json = sender,
-                recipient_json = recipient,
-                message_json = message_text
-            };
+            Message message = new Message(sender, recipient, message_text);
 
             return JsonConvert.SerializeObject(message);
         }
@@ -82,9 +78,9 @@ namespace ChatClient
                     {
                         Message received_message = ParseJsonMessage(data_from_server);
 
-                        int sender_id = received_message.sender_json;
-                        int recipient_id = received_message.recipient_json;
-                        string parsed_mesage = received_message.message_json;
+                        int sender_id = received_message.SenderID;
+                        int recipient_id = received_message.ReceiverID;
+                        string parsed_mesage = received_message.Content;
                         if (parsed_mesage == "DISCONNECT")
                         {
                             client_socket.Close();
